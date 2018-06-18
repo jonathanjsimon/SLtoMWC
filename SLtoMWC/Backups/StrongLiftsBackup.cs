@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-namespace SLtoMWC.Utilities
+namespace SLtoMWC.Backups
 {
     public class StrongLiftsBackup
     {

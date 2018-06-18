@@ -1,5 +1,5 @@
 ﻿using System;
-namespace SLtoMWC.Utilities
+namespace SLtoMWC.Backups
 {
     public class Set
     {

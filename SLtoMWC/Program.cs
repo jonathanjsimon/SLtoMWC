@@ -22,7 +22,7 @@ namespace SLtoMWC
             try
             {
                 p.Parse(args);
-            
+
             }
             catch (OptionException)
             {
@@ -36,9 +36,10 @@ namespace SLtoMWC
 #endif
 
 
+            StrongLiftsBackup slb = null;
             if (File.Exists(csvPath))
             {
-                StrongLiftsBackup slb = StrongLiftsBackup.LoadFromCSV(csvPath);
+                slb = StrongLiftsBackup.LoadFromCSV(csvPath);
             }
 
             int strongliftsProgramId = Converters.ProgramNameToMWCId("StrongLifts 5x5");
