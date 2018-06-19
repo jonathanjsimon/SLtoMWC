@@ -2,6 +2,7 @@
 using System.IO;
 using NDesk.Options;
 using SLtoMWC.Utilities;
+using SLtoMWC.Backups;
 
 namespace SLtoMWC
 {
@@ -41,6 +42,15 @@ namespace SLtoMWC
             {
                 slb = StrongLiftsBackup.LoadFromCSV(csvPath);
             }
+
+            // This doesn't work yet for dll reasons
+
+            //if (File.Exists(dbPath))
+            //{
+            //    MWCDataSource mwcDataSource = new MWCDataSource(dbPath);
+            //    int historyCount = mwcDataSource.HistoryCount;
+            //    Console.WriteLine("History Count: {0}", historyCount);
+            //}
 
             int strongliftsProgramId = Converters.ProgramNameToMWCId("StrongLifts 5x5");
 
